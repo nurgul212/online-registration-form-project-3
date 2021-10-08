@@ -1,0 +1,158 @@
+* {  
+    box-sizing: border-box; 
+    margin:0;   
+}
+
+
+body {
+    background: radial-gradient(#ebf3c4,#f9f4f0 );
+    color: #060807;
+    font-family: 'Nunito', sans-serif;
+    font-size:16px;
+    
+}
+main {
+    margin: 0 auto;
+    padding: 6px;
+}
+
+
+header h1 {
+    background-color: #085858;
+    color: white;
+    text-align: center;
+    font-size:24px;
+    padding:16px 0;
+}
+
+
+section {
+    text-align: center;
+    padding: 20px 5px;
+}
+
+.two-lines{
+    height: auto;
+    width:100%;
+    /* margin-left:6px; */
+    border-top:5px solid #085858;
+    border-bottom:2.5px solid #085858;
+    /* padding:1px; */
+   
+}
+.one-line {
+    height: auto;
+    width:100%;
+    /* margin-left:6px; */
+    border-bottom:2.5px solid #085858;
+    padding:1px;
+
+}
+.contact-field{
+    border-top: 2.5px solid  #085858;
+    margin-top:-20px;
+}
+
+legend {
+    font-size:20px;  
+   font-weight: 600;
+}
+
+ p {
+    margin-top:16px;
+    margin-bottom:20px;
+}
+
+#logo-flag {
+    width: 7%;
+    height: 13px;
+    position: relative;
+}
+
+fieldset {
+    border: none;
+    padding: 18px 12px;
+    margin: 32px auto 16px;
+    display: flex;
+    flex-direction: column;
+}
+::placeholder {
+    font-style: italic;
+    text-align: right;
+  }
+  
+  input[type="tel"],
+  input[type="email"],
+  input[type="address"],
+  input[type="text"], select {
+    width: 100%;
+    padding: 18px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border:none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgb(232 233 224);
+    
+  }
+
+  option.choose-province{
+      font-style: italic;
+  }
+
+  #zip {
+      width:50%;
+  }
+  
+input[type="submit"] {
+    width: 100%;
+    background-color: #3cad91;
+    color: white;
+    padding: 14px 20px;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #085858;
+  }
+
+    textarea {
+        height: 130px;
+        background-color: rgb(232 233 224);
+        margin-top:16px;
+        border-color:rgb(235, 230, 230);
+        border-radius: 2%;
+        resize: vertical;
+    }
+    textarea::placeholder{
+        text-align: left;
+    }
+    
+  select,
+  input:focus {
+    background-color:rgb(248, 244, 244); 
+    outline-color: rgb(175, 7, 43);
+}
+textarea:focus { 
+    background-color:rgb(248, 244, 244); 
+    outline-color: rgb(175, 7, 43);
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.newsletter{
+    padding:12px 0;
+}
+footer {
+    text-align: center;
+    font-style: italic;
+    color:gray;
+}
+
+/* Media Queries */
+
+
