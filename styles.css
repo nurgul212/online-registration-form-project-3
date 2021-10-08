@@ -134,11 +134,13 @@ textarea {
   input:focus {
     background-color:rgb(248, 244, 244); 
     outline-color: rgb(175, 7, 43);
+    transition: 0.1s;
 }
 textarea:focus { 
     background-color:rgb(248, 244, 244); 
     outline-color: rgb(175, 7, 43);
     box-shadow: 0 0 10px #719ECE;
+    transition: 0.1s;
 }
 
 .newsletter{
@@ -180,7 +182,7 @@ footer {
 }
  
  #zip {
- width:33%;
+ width:25%;
 }
     
 }
