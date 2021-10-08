@@ -8,8 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,900;1,400;1,700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="styles.css">
-    
+    <link rel="stylesheet" href="styles.css">    
 </head>
 
 <body>
@@ -26,13 +25,12 @@
          <div class="two-lines"></div>
        
         <form class="contact-info">
-            <div class="contact-division">
-                <fieldset>
-                    <legend> Contact Information</legend>                  
+            <div>
+                <fieldset class="contact-division" >
+                    <legend> Contact Information</legend>                	                
                     <label for="fname">Full Name</label>
                     <input type="text" id="fname" name="user_name" placeholder="Required" required>
-                   
-
+                    
                     <label for="email">Email Address</label>
                     <input type="email" id="email" name="user_email" placeholder="Required" required>
                 
@@ -40,13 +38,13 @@
                     <input type="tel" id="phone" name="user_phone" placeholder=" 333-333-4444" required> 
 
                     <label for="address">Street Address</label>
-                    <input type="address" id="address" name="user_address" placeholder="123 Lenore Dr">                   
+                    <input type="text" id="address" name="user_address" placeholder="123 Lenore Dr">                   
 
                     <label for="city">City</label>
                     <input type="text" id="city" name="user_city" placeholder="Toronto">                   
 
                     <label for="province">Province / Territory <img src="Flag_of_Canada.svg" alt="Canada Flag logo" id="logo-flag"> </label>
-                    <select type="text"id="province-territory" name="user_province-territory">
+                    <select id="province" name="user_province-territory">
                         <option value="" disabled="disabled" selected="selected" class="choose-province">Choose Province / Territory</option> 
                         <option value="AB">Alberta</option>
                         <option value="BC">British Columbia</option>
@@ -90,20 +88,19 @@
                     <p>Newsletter format</p>
                     <div class="newsletter">
                         <input type="radio" id="html" name="format" value="html-format"> 
-                        <label for="html">HTML</label>                  
+                        <label for="html"> HTML</label>                  
                     </div>
                     
                     <div class="newsletter">
                         <input type="radio" id="plain-text" name="format" value="plain-text-format"> 
-                        <label for="plain-text">Plain text</label>                       
-                    </div>
-
+                        <label for="plain-text"> Plain text</label>                       
+                    </div><br>
+               
                     <label for="other-topics">Other topics you'd like to hear about</label>
                     <textarea id="other-topics" name="other" placeholder="Please write something here..."></textarea>
                 </fieldset> 
 
-                <input type="submit" id="button" value="Sign Up">  
-            
+                <input type="submit" id="button" value="Sign Up">             
             </div>              
         </form>             
     </main>

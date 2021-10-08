@@ -3,19 +3,16 @@
     margin:0;   
 }
 
-
 body {
     background: radial-gradient(#ebf3c4,#f9f4f0 );
     color: #060807;
     font-family: 'Nunito', sans-serif;
-    font-size:16px;
-    
+    font-size:16px;   
 }
 main {
     margin: 0 auto;
     padding: 6px;
 }
-
 
 header h1 {
     background-color: #085858;
@@ -25,11 +22,20 @@ header h1 {
     padding:16px 0;
 }
 
-
 section {
     text-align: center;
     padding: 20px 5px;
 }
+legend {
+    font-size:20px;  
+   font-weight: 600;
+}
+
+ p {
+    margin-top:16px;
+    margin-bottom:20px;
+}
+
 
 .two-lines{
     height: auto;
@@ -53,15 +59,6 @@ section {
     margin-top:-20px;
 }
 
-legend {
-    font-size:20px;  
-   font-weight: 600;
-}
-
- p {
-    margin-top:16px;
-    margin-bottom:20px;
-}
 
 #logo-flag {
     width: 7%;
@@ -74,7 +71,7 @@ fieldset {
     padding: 18px 12px;
     margin: 32px auto 16px;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
 }
 ::placeholder {
     font-style: italic;
@@ -92,8 +89,7 @@ fieldset {
     border:none;
     border-radius: 5px;
     box-sizing: border-box;
-    background-color: rgb(232 233 224);
-    
+    background-color: rgb(232 233 224);   
   }
 
   option.choose-province{
@@ -115,25 +111,26 @@ input[type="submit"] {
     cursor: pointer;
     font-size: 22px;
     font-weight: 600;
-  }
+}
   
-  input[type="submit"]:hover {
+input[type="submit"]:hover {
     background-color: #085858;
-  }
+}
 
-    textarea {
+textarea {
         height: 130px;
         background-color: rgb(232 233 224);
         margin-top:16px;
         border-color:rgb(235, 230, 230);
         border-radius: 2%;
         resize: vertical;
-    }
-    textarea::placeholder{
+        padding:20px;
+}
+ textarea::placeholder{
         text-align: left;
-    }
+}
     
-  select,
+  select:focus,
   input:focus {
     background-color:rgb(248, 244, 244); 
     outline-color: rgb(175, 7, 43);
@@ -153,6 +150,37 @@ footer {
     color:gray;
 }
 
-/* Media Queries */
+.newsletter label {
+    padding-left:10px;
+}
+/* ================================= 
+  Media Query: use a 768px breakpoint for desktop
+==================================== */
 
+@media screen and (min-width:768px) {
+    main {
+       max-width: 700px;
+   }
+  
+ .contact-division {
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+ .contact-division input, select {
+    width: 70%;
+    margin: 8px 8px;
+ }
 
+ .contact-division label {
+    width: 25%;
+    margin: 20px 0;
+ }
+ #logo-flag {
+    width: 14%;
+}
+ 
+ #zip {
+ width:33%;
+}
+    
+}
