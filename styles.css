@@ -160,29 +160,29 @@ footer {
 ==================================== */
 
 @media screen and (min-width:768px) {
-    main {
-       max-width: 700px;
-   }
-  
- .contact-division {
-    flex-direction: row;
-    flex-wrap: wrap;
- }
- .contact-division input, select {
-    width: 70%;
-    margin: 8px 8px;
- }
+        main {
+        max-width: 700px;
+    }
+    
+    .contact-division {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contact-division input, select {
+        width: 70%;
+        margin: 8px 8px;
+    }
 
- .contact-division label {
-    width: 25%;
-    margin: 20px 0;
- }
- #logo-flag {
-    width: 14%;
-}
- 
- #zip {
- width:25%;
-}
+    .contact-division label {
+        width: 25%;
+        margin: 20px 0;
+    }
+    #logo-flag {
+        width: 14%;
+    }
+    
+    #zip {
+    width:25%;
+    }
     
 }
